@@ -30,7 +30,7 @@ iconClose.addEventListener('click', ()=>{
     list.classList.add("md:hidden");
     socials.classList.remove("flex");
     socials.classList.add("hidden");
-    logo.src="/images/logo-bookmark.svg";
+    logo.src="images/logo-bookmark.svg";
 });
 
 function switchTab(evt,tab){

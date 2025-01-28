@@ -20,7 +20,7 @@ iconMenu.addEventListener('click', ()=>{
     list.classList.remove("md:hidden");
     socials.classList.add("flex");
     socials.classList.remove("hidden");
-    logo.src="/images/logo-bookmark -light.svg";
+    logo.src="images/logo-bookmark -light.svg";
 });
 iconClose.addEventListener('click', ()=>{
     navbar.classList.remove("fixed", "top-0", "left-0","w-full","h-full","mt-0","z-20","bg-VeryDarkBlue","opacity-85","flex-col", "p-10");

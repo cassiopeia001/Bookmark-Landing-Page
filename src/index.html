@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" class="font-rubik text-lg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link href="./output.css" rel="stylesheet">
+  <script defer src="index.js"></script>
+  <title>Frontend Mentor | Bookmark landing page</title>
+</head>
+<body>
+  <nav id="navbar" class="w-full px-24 mt-7 mb-20 flex justify-between items-center gap-5 md:px-10 md:justify-normal md:gap-10">
+    <div class="flex justify-between items-center md:w-full">
+      <img id="logo" src="/images/logo-bookmark.svg" alt="bookmark logo">
+      <button id="menu-icon" class="hidden md:block">
+        <img src="/images/icon-hamburger.svg" alt="menu icon">
+      </button>
+      <button id="close-icon" class="hidden">
+        <img src="/images/icon-close.svg" alt="close icon">
+      </button>
+    </div>
+    <ul id="list" class="flex items-center justify-between gap-10 md:flex-col md:border-t-2 md:w-full md:pt-5 md:gap-5 md:hidden">
+      <li class="md:w-full text-center"><a href="#" class="uppercase text-VeryDarkBlue text-xs tracking-widest hover:text-SoftRed md:border-b-2 md:w-full md:pb-5 md:block md:text-white">Features</a></li>
+      <li class="md:w-full text-center"><a href="#" class="uppercase text-VeryDarkBlue text-xs tracking-widest hover:text-SoftRed md:border-b-2 md:w-full md:pb-5 md:block md:text-white">Pricing</a></li>
+      <li class="md:w-full text-center"><a href="#" class="uppercase text-VeryDarkBlue text-xs tracking-widest hover:text-SoftRed md:border-b-2 md:w-full md:pb-5 md:block md:text-white">Contact</a></li>
+      <button class="uppercase text-white font-medium bg-SoftRed border-2 border-SoftRed text-xs px-7 py-2 rounded-md tracking-widest hover:bg-white hover:border-SoftRed hover:text-SoftRed md:w-full md:bg-transparent md:border-white">Login</button>
+    </ul>
+    <div id="socials" class="hidden gap-10">
+      <button>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="fill-white hover:fill-SoftRed">
+          <path fill-rule="evenodd" d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/>
+        </svg>
+      </button>
+      <button>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" class="fill-white hover:fill-SoftRed">
+          <path fill-rule="evenodd" d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557z"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+  <main>
+    <section class="flex gap-20 mb-20 items-center md:flex-col-reverse">
+      <div class="flex flex-col gap-5 pl-24 md:px-10 md:items-center md:text-center">
+        <h1 class="text-4xl font-medium text-VeryDarkBlue">A Simple Bookmark Manager</h1>
+        <p class="text-GrayishBlue"> A clean and simple interface to organize your favourite websites. Open a new 
+          browser tab and see your sites load instantly. Try it for free.</p>
+        <div class="flex gap-3 w-full md:items-center md:justify-center">
+          <button class="bg-SoftBlue border-2 border-SoftBlue rounded-md px-4 py-3 text-white text-sm font-medium shadow-md hover:bg-transparent hover:border-SoftBlue hover:text-SoftBlue">Get it on Chrome</button>
+          <button class="bg-gray-100 border-2 border-gray-100 rounded-md px-4 py-3 text-gray-600 text-sm font-medium shadow-md hover:bg-transparent hover:border-gray-600">Get it on Firefox</button>
+        </div>
+      </div>
+      <div class="w-full relative pr-3 after:absolute after:right-0 after:bg-SoftBlue after:w-3/4 after:h-2/3 after:-z-10 after:-bottom-5 after:rounded-l-full">
+        <img class="w-full" src="/images/illustration-hero.svg" alt="hero image">
+      </div>
+    
+    </section>
+    <section class="flex flex-col gap-12 items-center mb-40">
+      <div class="w-1/2 flex flex-col items-center gap-4 px-20 md:w-full md:px-10">
+        <h2 class="text-2xl font-medium text-VeryDarkBlue">Features</h2>
+        <p class="text-GrayishBlue text-center"> Our aim is to make it quick and easy for you to access your favourite websites. 
+          Your bookmarks sync between your devices so you can access them on the go.</p>
+      </div>
+      <div id="tab-container" class="flex border-b-2 pb-5 md:flex-col md:w-[calc(100%-2.5rem)] md:mx-10 md:border-b-0 md:border-t-2">
+        <button id="features-btn1" class="relative px-10 text-GrayishBlue hover:cursor-pointer after:content-[''] after:h-[4px] after:w-full after:bg-SoftRed after:left-0 after:-bottom-5 after:absolute after:opacity-100 hover:text-SoftRed md:border-b-2 md:p-5 md:after:bottom-0 md:after:w-1/2 md:after:left-1/2 md:after:translate-x-[-50%]" onclick="switchTab(event,'bookmark')">Simple Bookmarking</button>
+        <button id="features-btn2" class="relative px-10 text-GrayishBlue hover:cursor-pointer after:content[''] after:h-[4px] after:w-full after:bg-SoftRed after:left-0 after:-bottom-5 after:absolute after:opacity-0 hover:text-SoftRed md:border-b-2 md:p-5 md:after:bottom-0 md:after:w-1/2 md:after:left-1/2 md:after:translate-x-[-50%]" onclick="switchTab(event,'search')">Speedy Searching</button>
+        <button id="features-btn3" class="relative px-10 text-GrayishBlue hover:cursor-pointer after:content[''] after:h-[4px] after:w-full after:bg-SoftRed after:left-0 after:-bottom-5 after:absolute after:opacity-0 hover:text-SoftRed md:border-b-2 md:p-5 md:after:bottom-0 md:after:w-1/2 md:after:left-1/2 md:after:translate-x-[-50%]" onclick="switchTab(event,'share')">Easy Sharing</button>
+      </div>
+      <div id="features-container">
+        <div id="bookmark" class="flex gap-24 items-center md:flex-col">
+          <div class="relative pl-24 w-full after:content-[''] after:absolute after:left-0 after:bg-SoftBlue after:w-3/4 after:h-5/6 after:-z-10 after:-bottom-14 after:rounded-r-full md:px-10">
+            <img class="w-full" src="/images/illustration-features-tab-1.svg" alt="features illustration 1">
+          </div>
+          <div class="w-full flex flex-col items-start gap-5 pr-24 md:px-10 md:items-center md:text-center">
+            <h2 class="text-2xl font-medium text-VeryDarkBlue">Bookmark in one click</h2>
+            <p class="text-GrayishBlue ">Organize your bookmarks however you like. Our simple drag-and-drop interface 
+              gives you complete control over how you manage your favourite sites.</p>
+            <button class="bg-SoftBlue px-5 py-3 rounded-md text-sm text-white font-medium shadow-md">More Info</button>
+          </div>
+        </div>
+        <div id="search" class="hidden gap-24 items-center md:flex-col">
+          <div class="relative pl-24 w-full after:content-[''] after:absolute after:left-0 after:bg-SoftBlue after:w-3/4 after:h-5/6 after:-z-10 after:-bottom-14 after:rounded-r-full md:px-10">
+            <img class="w-full" src="/images/illustration-features-tab-2.svg" alt="features illustration 2">
+          </div>
+          <div class="w-full flex flex-col items-start gap-5 pr-24 md:px-10 md:items-center md:text-center">
+            <h2 class="text-2xl font-medium text-VeryDarkBlue">Intelligent search</h2>
+            <p class="text-GrayishBlue ">Our powerful search feature will help you find saved sites in no time at all. 
+              No need to trawl through all of your bookmarks.</p>
+            <button  class="bg-SoftBlue px-5 py-3 rounded-md text-sm text-white font-medium shadow-md">More Info</button>
+          </div>
+        </div>
+        <div id="share" class="hidden gap-24 items-center md:flex-col">
+          <div class="relative pl-24 w-full after:content-[''] after:absolute after:left-0 after:bg-SoftBlue after:w-3/4 after:h-5/6 after:-z-10 after:-bottom-14 after:rounded-r-full md:px-10">
+            <img class="w-full" src="/images/illustration-features-tab-3.svg" alt="features illustration 3">
+          </div>
+          <div class="w-full flex flex-col items-start gap-5 pr-24 md:px-10 md:items-center md:text-center">
+            <h2 class="text-2xl font-medium text-VeryDarkBlue">Share your bookmarks</h2>
+            <p class="text-GrayishBlue ">Easily share your bookmarks and collections with others. Create a shareable 
+              link that you can send at the click of a button.</p>
+            <button class="bg-SoftBlue px-5 py-3 rounded-md text-sm text-white font-medium shadow-md">More Info</button>
+          </div>
+        </div> 
+      </div>
+    </section>
+    <section class="flex flex-col gap-12 items-center mb-32">
+      <div class="flex flex-col items-center w-1/2 gap-5 md:w-full md:px-10">
+        <h2 class="text-2xl font-medium text-VeryDarkBlue text-center">Download the extension</h2>
+        <p class="text-GrayishBlue text-center"> We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+          got a favourite you’d like us to prioritize.</p>
+      </div>
+      <div class="flex gap-7 items-center px-10 text-center md:flex-col">
+        <div class="rounded-lg shadow-lg max-w-64 md:max-w-full">
+          <div class="flex flex-col items-center justify-center p-10 gap-1">
+            <img class="w-20 mb-5" src="/images/logo-chrome.svg" alt="chrome logo">
+            <h3 class="text-xl font-medium text-VeryDarkBlue">Add to Chrome</h3>
+            <p class="text-GrayishBlue text-center text-sm">Minimum version 62</p>
+          </div>
+          <img src="/images/bg-dots.svg" alt="dots bg">
+          <div class="flex items-center justify-center py-5">
+            <button class="bg-SoftBlue border-2 border-SoftBlue rounded-md text-white px-5 py-3 text-sm font-medium hover:bg-transparent hover:border-SoftBlue hover:text-SoftBlue">Add & Install Extension</button>
+          </div>
+        </div>
+        <div class="rounded-lg shadow-lg max-w-64 mt-14 md:max-w-full md:mt-0">
+          <div class="flex flex-col items-center justify-center p-10 gap-1">
+            <img class="w-20 mb-5"  src="/images/logo-firefox.svg" alt="firefox logo">
+            <h3 class="text-xl font-medium text-VeryDarkBlue">Add to Firefox</h3>
+            <p class="text-GrayishBlue text-center text-sm">Minimum version 55</p>
+          </div>
+          <img src="/images/bg-dots.svg" alt="dots bg">
+          <div class="flex items-center justify-center py-5">
+            <button class="bg-SoftBlue border-2 border-SoftBlue rounded-md text-white px-5 py-3 text-sm font-medium hover:bg-transparent hover:border-SoftBlue hover:text-SoftBlue">Add & Install Extension</button>
+          </div>
+        </div>
+        <div class="rounded-lg shadow-lg max-w-64 mt-28 md:max-w-full md:mt-0">
+          <div class="flex flex-col items-center justify-center p-10 gap-1">
+            <img class="w-20 mb-5" src="/images/logo-opera.svg" alt="opera logo">
+            <h3 class="text-xl font-medium text-VeryDarkBlue">Add to Opera</h3>
+            <p class="text-GrayishBlue text-center text-sm">Minimum version 46</p>
+          </div>
+          <img src="/images/bg-dots.svg" alt="dots bg">
+          <div class="flex items-center justify-center py-5">
+            <button class="bg-SoftBlue border-2 border-SoftBlue rounded-md text-white px-5 py-3 text-sm font-medium hover:bg-transparent hover:border-SoftBlue hover:text-SoftBlue">Add & Install Extension</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="flex flex-col items-center justify-center mb-32">
+      <div class="w-2/5 flex flex-col items-center gap-3 mb-10 md:w-full md:px-10">
+        <h2 class="text-2xl font-medium text-VeryDarkBlue text-center">Frequently Asked Questions</h2>
+        <p class="text-GrayishBlue text-center">Here are some of our FAQs. If you have any other questions you’d like 
+          answered please feel free to email us.</p>
+      </div>
+      <div class="w-2/5 flex flex-col items-start border-t-2 md:w-[calc(100%-2.5rem)]">
+        <details name="faq" class="w-full border-b-2 p-3 group">
+          <summary class="list-none flex justify-between items-center text-VeryDarkBlue cursor-pointer">What is Bookmark?
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" class="group-open:stroke-SoftRed group-open:rotate-180 transition-transform duration-300 stroke-SoftBlue">
+              <path fill="none" stroke-width="3" d="M1 1l8 8 8-8"/></svg>
+          </summary>
+          <p class="text-GrayishBlue py-2 mt-5">  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+            justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+        </details>
+        <details name="faq" class="w-full border-b-2 p-3 group">
+          <summary class="list-none flex justify-between items-center text-VeryDarkBlue cursor-pointer">How can I request a new browser?
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" class="group-open:stroke-SoftRed group-open:rotate-180 transition-transform duration-300 stroke-SoftBlue">
+              <path fill="none" stroke-width="3" d="M1 1l8 8 8-8"/></svg>
+          </summary>
+          <p class="text-GrayishBlue py-2 mt-5">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+            Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+            ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+            Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+        </details>
+        <details name="faq" class="w-full border-b-2 p-3 group">
+          <summary class="list-none flex justify-between items-center text-VeryDarkBlue cursor-pointer"> Is there a mobile app?
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" class="group-open:stroke-SoftRed group-open:rotate-180 transition-transform duration-300 stroke-SoftBlue">
+              <path fill="none" stroke-width="3" d="M1 1l8 8 8-8"/></svg>
+          </summary>
+          <p class="text-GrayishBlue py-2 mt-5">  Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+            urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+            sollicitudin ex et ultricies bibendum.</p>
+        </details>
+        <details name="faq" class="w-full border-b-2 p-3 group">
+          <summary class="list-none flex justify-between items-center text-VeryDarkBlue cursor-pointer">What about other Chromium browsers?
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" class="group-open:stroke-SoftRed group-open:rotate-180 transition-transform duration-300 stroke-SoftBlue">
+              <path fill="none" stroke-width="3" d="M1 1l8 8 8-8"/></svg>
+          </summary>
+          <p class="text-GrayishBlue py-2 mt-5">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+            vitae neque eget nisl gravida pellentesque non ut velit.</p>
+        </details>
+      </div>
+      <button class="mt-10 bg-SoftBlue px-5 py-3 rounded-md text-white text-sm font-medium shadow-md">More Info</button>
+    </section>
+    <section class="w-full bg-SoftBlue py-12 flex flex-col items-center md:px-10">
+      <div class="w-2/5 flex flex-col items-center justify-center gap-6 md:w-full">
+        <p class="text-white uppercase text-sm tracking-widest">35,000+ already joined</p>
+        <h2 class="text-white font-semibold text-3xl text-center">Stay up-to-date with what we’re doing</h2>
+        <form id="form" class="flex gap-3 items-center md:flex-col md:w-full ">
+          <div class="flex flex-col bg-SoftRed rounded-md text-white text-xs font-medium italic md:w-full relative">
+            <input id="email" class="peer relative px-4 py-3 rounded-md text-sm placeholder-gray-300 text-VeryDarkBlue invalid:border-2 invalid:border-SoftRed focus:outline-none" type="email" name="email" placeholder="Enter your email adress">
+            <span id="error-msg" class="peer-invalid:block hidden text-white text-xs font-medium italic bg-SoftRed w-full rounded-md px-3 py-1">Whoops, make sure it's an email</span>
+            <img id="error-icon" class="peer-invalid:block hidden absolute top-3 right-3" src="/images/icon-error.svg" alt="error icon">
+          </div>
+          <button id="submit-btn" type="submit" class="bg-SoftRed rounded-md text-white px-4 py-3 text-sm font-medium border-2 border-SoftRed md:w-full">Contact Us</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-VeryDarkBlue flex py-5 px-32 md:flex-col">
+    <nav class="flex justify-between w-full gap-20 md:flex-col  md:gap-10">
+      <div class="flex justify-between items-center gap-24 md:flex-col md:gap-5">
+        <img class="w-32 h-5" src="/images/logo-bookmark -light.svg" alt="bookmark logo">
+        <ul class="flex gap-10 md:flex-col md:gap-5 md:items-center">
+          <li><a href="#" class="uppercase text-gray-300 text-xs tracking-widest hover:text-SoftRed">Features</a></li>
+          <li><a href="#" class="uppercase text-gray-300 text-xs tracking-widest hover:text-SoftRed">Pricing</a></li>
+          <li><a href="#" class="uppercase text-gray-300 text-xs tracking-widest hover:text-SoftRed">Contact</a></li>
+        </ul>
+      </div>
+      <div class="flex gap-10 md:justify-center">
+        <button>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="fill-white hover:fill-SoftRed">
+            <path fill-rule="evenodd" d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/>
+          </svg>
+        </button>
+        <button>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" class="fill-white hover:fill-SoftRed">
+            <path fill-rule="evenodd" d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557z"/>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </footer>
+</body>
+</html>
